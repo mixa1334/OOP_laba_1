@@ -216,25 +216,27 @@ private:
 	Matrix  minor(Matrix matrix, const int& i, const int& j)
 	{
 		matrix.arr.erase(matrix.arr.begin() + i);
-		for (auto& a_m : matrix.arr)
+		for (auto& matrix_ : matrix.arr)
 		{
-			a_m.erase(a_m.begin() + j);
+			matrix_.erase(matrix_.begin() + j);
 		}
 		return matrix;
 	}
 	
 	double determinant(const Matrix& matrix)
 	{
-		int  m = matrix.arr.size();
-		int  n = matrix.arr[0].size();
-		if (n == 1)
+		int  X = matrix.arr.size();
+		int  Y = matrix.arr[0].size();
+		if (Y == 1)
+		{
 			return matrix.arr[0][0];
+		}
 		int  signum = 1;
 		int  summ = 0;
 		int  j = 0;
-		for (auto& a_0j : matrix.arr[0])
+		for (auto& matrix_ : matrix.arr[0])
 		{
-			summ += a_0j * signum * determinant(minor(matrix, 0, j));
+			summ += matrix_ * signum * determinant(minor(matrix, 0, j));
 			signum *= -1;
 			j++;
 		}
