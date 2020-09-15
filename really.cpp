@@ -61,7 +61,7 @@ public:
 
 	Matrix operator+(const double& other)
 	{
-		Matrix temp(this->arr.size(), this->arr[arr.size()-1].size());
+		Matrix temp(this->arr.size(), this->arr[arr.size() - 1].size());
 		for (int i = 0; i < temp.arr.size(); i++)
 		{
 			for (int k = 0; k < temp.arr[i].size(); k++)
@@ -79,7 +79,7 @@ public:
 
 	Matrix operator+(const Matrix& other)
 	{
-		Matrix temp(this->arr.size(), this->arr[this->arr.size()-1].size());
+		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
 		for (int i = 0; i < temp.arr.size(); i++)
 		{
 			for (int k = 0; k < temp.arr[i].size(); k++)
@@ -97,7 +97,7 @@ public:
 
 	Matrix operator-(const double& other)
 	{
-		Matrix temp(this->arr.size(), this->arr[this->arr.size()-1].size());
+		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
 		for (int i = 0; i < temp.arr.size(); i++)
 		{
 			for (int k = 0; k < temp.arr[i].size(); k++)
@@ -115,7 +115,7 @@ public:
 
 	Matrix operator-(const Matrix& other)
 	{
-		Matrix temp(this->arr.size(), this->arr[this->arr.size()-1].size());
+		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
 		for (int i = 0; i < temp.arr.size(); i++)
 		{
 			for (int k = 0; k < temp.arr[i].size(); k++)
@@ -133,7 +133,7 @@ public:
 
 	Matrix operator*(const double& other)
 	{
-		Matrix temp(this->arr.size(), this->arr[this->arr.size()-1].size());
+		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
 		for (int i = 0; i < temp.arr.size(); i++)
 		{
 			for (int k = 0; k < temp.arr[i].size(); k++)
@@ -203,10 +203,44 @@ public:
 		return *this;
 	}
 
+	double getDet()
+	{
+		return determinant(*this);
+	}
+
 	friend ostream& operator<<(ostream& os, const Matrix& matrix);
 
 private:
 	vector<vector<double>> arr;
+
+	Matrix  minor(Matrix matrix, const int& i, const int& j)
+	{
+		matrix.arr.erase(matrix.arr.begin() + i);
+		for (auto& a_m : matrix.arr)
+		{
+			a_m.erase(a_m.begin() + j);
+		}
+		return matrix;
+	}
+	
+	double determinant(const Matrix& matrix)
+	{
+		int  m = matrix.arr.size();
+		int  n = matrix.arr[0].size();
+		if (n == 1)
+			return matrix.arr[0][0];
+		int  signum = 1;
+		int  summ = 0;
+		int  j = 0;
+		for (auto& a_0j : matrix.arr[0])
+		{
+			summ += a_0j * signum * determinant(minor(matrix, 0, j));
+			signum *= -1;
+			j++;
+		}
+		return summ;
+	}
+
 };
 
 ostream& operator<<(ostream& stream, const Matrix& matrix)
@@ -230,6 +264,8 @@ int main()
 	Matrix A(GG);
 	Matrix B(WP);
 	Matrix C = A * B;
-	cout << C;
+	cout << A;
+	cout << A.getDet() << "\n\n";
+	cout << A;
 
 }

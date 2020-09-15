@@ -22,6 +22,7 @@ C:\Users\миша\source\repos\really\really.cpp(157,22): warning C4018: <: не
 C:\Users\миша\source\repos\really\really.cpp(159,23): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\миша\source\repos\really\really.cpp(171,21): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\миша\source\repos\really\really.cpp(173,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\really\really.cpp(214,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\really\really.cpp(216,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\миша\source\repos\really\really.cpp(236,1): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\миша\source\repos\really\really.cpp(247,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\миша\source\repos\really\really.cpp(249,21): warning C4018: <: несоответствие типов со знаком и без знака
   really.vcxproj -> C:\Users\миша\source\repos\really\Debug\really.exe
