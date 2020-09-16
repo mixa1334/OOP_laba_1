@@ -22,15 +22,15 @@ C:\Users\furno\source\repos\OOP_laba_1\really.cpp(163,22): warning C4018: <: н�
 C:\Users\furno\source\repos\OOP_laba_1\really.cpp(165,23): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\furno\source\repos\OOP_laba_1\really.cpp(177,21): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\furno\source\repos\OOP_laba_1\really.cpp(179,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(260,1): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(282,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(284,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(304,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(306,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(326,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(328,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(339,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(341,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(357,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\really.cpp(360,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(268,1): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(290,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(292,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(312,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(314,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(334,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(336,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(347,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(349,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(365,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\really.cpp(368,21): warning C4018: <: несоответствие типов со знаком и без знака
   really.vcxproj -> C:\Users\furno\source\repos\OOP_laba_1\Debug\really.exe

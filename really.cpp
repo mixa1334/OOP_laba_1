@@ -211,7 +211,7 @@ public:
 
 	double getDeterminantOfMatrix()
 	{
-		if (determinantCheck())
+		if (squareMatrixCheck())
 		{
 			return determinant(*this);
 		}
@@ -221,11 +221,55 @@ public:
 		}
 	}
 
-	void getNorOfMatrix()
+	double getNormOneOfMatrix()
 	{
-		cout << this->normOne() << endl;
-		cout << this->normTwo() << endl;
-		cout << this->normThree() << endl;
+		return (this->normOne());
+	}
+
+	double getNormTwoOfMatrix()
+	{
+		return (this->normTwo());
+	}
+
+	double getNormThreeOfMatrix()
+	{
+		return (this->normThree());
+	}
+
+	bool matrixAdditionCheck(const Matrix& other)
+	{
+		if (this->arr.size() == other.arr.size() && this->arr[this->arr.size() - 1].size() == other.arr[other.arr.size() - 1].size())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	bool matrixMaltiplicationCheck(const Matrix& other)
+	{
+		if (this->arr[this->arr.size() - 1].size() == other.arr.size())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	bool squareMatrixCheck()
+	{
+		if (this->arr.size() == this->arr[this->arr.size() - 1].size())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	friend ostream& operator<<(ostream& os, const Matrix& matrix);
@@ -264,7 +308,7 @@ private:
 		return summ;
 	}
 
-	bool determinantCheck()
+	bool squareMatrixCheck()
 	{
 		if (this->arr.size() == this->arr[this->arr.size() - 1].size())
 		{
@@ -332,6 +376,7 @@ private:
 		}
 		return sqrt(temp);
 	}
+
 };
 
 ostream& operator<<(ostream& stream, const Matrix& matrix)
@@ -367,12 +412,10 @@ istream& operator>>(istream& stream, Matrix& matrix)
 
 int main()
 {
-	vector<vector<double>> GG = { {1,9},{-5,6} };
-	vector<vector<double>> WP = { {8},{-4} };
-	Matrix A(GG);
-	Matrix B(WP);
+	Matrix A;
 	cin >> A;
-	A.getNorOfMatrix();
+	cout << A.getNormOneOfMatrix() << endl;
+	cout << A.getNormTwoOfMatrix() << endl;
+	cout << A.getNormThreeOfMatrix() << endl;
 	cout << "\n\n";
-
 }
