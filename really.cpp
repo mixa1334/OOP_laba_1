@@ -413,9 +413,4 @@ istream& operator>>(istream& stream, Matrix& matrix)
 int main()
 {
 	Matrix A;
-	cin >> A;
-	cout << A.getNormOneOfMatrix() << endl;
-	cout << A.getNormTwoOfMatrix() << endl;
-	cout << A.getNormThreeOfMatrix() << endl;
-	cout << "\n\n";
 }
