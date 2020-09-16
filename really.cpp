@@ -1,10 +1,16 @@
 ﻿#include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 class Matrix
 {
 public:
+	Matrix()
+	{
+		arr.resize(0);
+	}
+
 	Matrix(const int& sizeX, const int& sizeY)
 	{
 		arr.resize(sizeX);
@@ -203,12 +209,28 @@ public:
 		return *this;
 	}
 
-	double getDet()
+	double getDeterminantOfMatrix()
 	{
-		return determinant(*this);
+		if (determinantCheck())
+		{
+			return determinant(*this);
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+	void getNorOfMatrix()
+	{
+		cout << this->normOne() << endl;
+		cout << this->normTwo() << endl;
+		cout << this->normThree() << endl;
 	}
 
 	friend ostream& operator<<(ostream& os, const Matrix& matrix);
+
+	friend istream& operator>>(istream& stream, Matrix& matrix);
 
 private:
 	vector<vector<double>> arr;
@@ -222,10 +244,9 @@ private:
 		}
 		return matrix;
 	}
-	
+
 	double determinant(const Matrix& matrix)
 	{
-		int  X = matrix.arr.size();
 		int  Y = matrix.arr[0].size();
 		if (Y == 1)
 		{
@@ -243,6 +264,74 @@ private:
 		return summ;
 	}
 
+	bool determinantCheck()
+	{
+		if (this->arr.size() == this->arr[this->arr.size() - 1].size())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	double normOne()
+	{
+		double max = 0, num = 0;
+		for (int i = 0; i < this->arr.size(); i++)
+		{
+			for (int k = 0; k < this->arr[i].size(); k++)
+			{
+				num += abs(this->arr[i][k]);
+			}
+			if (num > max)
+			{
+				max = num;
+				num = 0;
+			}
+			else
+			{
+				num = 0;
+			}
+		}
+		return max;
+	}
+
+	double normTwo()
+	{
+		double max = 0, num = 0;
+		for (int i = 0; i < this->arr[this->arr.size() - 1].size(); i++)
+		{
+			for (int k = 0; k < this->arr.size(); k++)
+			{
+				num += abs(this->arr[k][i]);
+			}
+			if (num > max)
+			{
+				max = num;
+				num = 0;
+			}
+			else
+			{
+				num = 0;
+			}
+		}
+		return max;
+	}
+
+	double normThree()
+	{
+		double temp = 0;
+		for (int i = 0; i < this->arr.size(); i++)
+		{
+			for (int k = 0; k < this->arr[i].size(); k++)
+			{
+				temp += this->arr[i][k] * this->arr[i][k];
+			}
+		}
+		return sqrt(temp);
+	}
 };
 
 ostream& operator<<(ostream& stream, const Matrix& matrix)
@@ -259,15 +348,31 @@ ostream& operator<<(ostream& stream, const Matrix& matrix)
 	return stream;
 }
 
+istream& operator>>(istream& stream, Matrix& matrix)
+{
+	int size;
+	stream >> size;
+	matrix.arr.resize(size);
+	stream >> size;
+	for (int i = 0; i < matrix.arr.size(); i++)
+	{
+		matrix.arr[i].resize(size);
+		for (int k = 0; k < matrix.arr[i].size(); k++)
+		{
+			stream >> matrix.arr[i][k];
+		}
+	}
+	return stream;
+}
+
 int main()
 {
 	vector<vector<double>> GG = { {1,9},{-5,6} };
 	vector<vector<double>> WP = { {8},{-4} };
 	Matrix A(GG);
 	Matrix B(WP);
-	Matrix C = A * B;
-	cout << A;
-	cout << A.getDet() << "\n\n";
-	cout << A;
+	cin >> A;
+	A.getNorOfMatrix();
+	cout << "\n\n";
 
 }
