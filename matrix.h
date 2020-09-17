@@ -1,7 +1,12 @@
 #pragma once
+#ifndef _MATRIX_
+#define _MATRIX_
+
 #include <vector>
 #include <iostream>
+#include <cmath>
 using namespace std;
+
 class Matrix
 {
 public:
@@ -77,3 +82,5 @@ private:
 	double normThree();
 
 };
+
+#endif _MATRIX_
