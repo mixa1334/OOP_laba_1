@@ -2,7 +2,7 @@
 
 Matrix::Matrix()
 {
-	arr.resize(0);
+	
 }
 
 Matrix::Matrix(const int& sizeX, const int& sizeY)

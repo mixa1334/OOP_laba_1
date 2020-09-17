@@ -2,3 +2,5 @@ C:\Users\миша\source\repos\really\Debug\really.exe
 C:\Users\миша\source\repos\really\Debug\really.pdb
 C:\Users\furno\source\repos\OOP_laba_1\Debug\really.exe
 C:\Users\furno\source\repos\OOP_laba_1\Debug\really.pdb
+C:\Users\миша\source\repos\OOP_laba_1\Debug\really.exe
+C:\Users\миша\source\repos\OOP_laba_1\Debug\really.pdb
