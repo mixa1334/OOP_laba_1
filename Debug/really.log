@@ -1,2 +1,36 @@
-﻿  really.cpp
+﻿  matrix.cpp
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(11,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(14,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(24,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(27,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(37,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(40,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(50,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(53,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(64,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(66,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(84,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(86,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(114,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(116,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(134,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(136,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(164,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(166,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(184,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(186,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(188,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(207,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(209,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(353,62): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(363,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(365,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(385,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(387,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(407,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(409,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(421,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(423,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(439,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(442,21): warning C4018: <: несоответствие типов со знаком и без знака
   really.vcxproj -> C:\Users\furno\source\repos\OOP_laba_1\Debug\really.exe

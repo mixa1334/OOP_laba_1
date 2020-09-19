@@ -2,7 +2,7 @@
 
 Matrix::Matrix()
 {
-	
+
 }
 
 Matrix::Matrix(const int& sizeX, const int& sizeY)
@@ -78,20 +78,34 @@ Matrix& Matrix::operator+=(const double& other)
 
 Matrix Matrix::operator+(const Matrix& other)
 {
-	Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
-	for (int i = 0; i < temp.arr.size(); i++)
+	if (this->matrixAdditionCheck(other))
 	{
-		for (int k = 0; k < temp.arr[i].size(); k++)
+		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
+		for (int i = 0; i < temp.arr.size(); i++)
 		{
-			temp.arr[i][k] = this->arr[i][k] + other.arr[i][k];
+			for (int k = 0; k < temp.arr[i].size(); k++)
+			{
+				temp.arr[i][k] = this->arr[i][k] + other.arr[i][k];
+			}
 		}
+		return temp;
 	}
-	return temp;
+	else
+	{
+		return *this;
+	}
 }
 
 Matrix& Matrix::operator+=(const Matrix& other)
 {
-	return *this = *this + other;
+	if (this->matrixAdditionCheck(other))
+	{
+		return *this = *this + other;
+	}
+	else
+	{
+		return *this;
+	}
 }
 
 Matrix Matrix::operator-(const double& other)
@@ -114,20 +128,34 @@ Matrix& Matrix::operator-=(const double& other)
 
 Matrix Matrix::operator-(const Matrix& other)
 {
-	Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
-	for (int i = 0; i < temp.arr.size(); i++)
+	if (this->matrixAdditionCheck(other))
 	{
-		for (int k = 0; k < temp.arr[i].size(); k++)
+		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
+		for (int i = 0; i < temp.arr.size(); i++)
 		{
-			temp.arr[i][k] = this->arr[i][k] - other.arr[i][k];
+			for (int k = 0; k < temp.arr[i].size(); k++)
+			{
+				temp.arr[i][k] = this->arr[i][k] - other.arr[i][k];
+			}
 		}
+		return temp;
 	}
-	return temp;
+	else
+	{
+		return *this;
+	}
 }
 
 Matrix& Matrix::operator-=(const Matrix& other)
 {
-	return *this = *this - other;
+	if (this->matrixAdditionCheck(other))
+	{
+		return *this = *this - other;
+	}
+	else
+	{
+		return* this;
+	}
 }
 
 Matrix Matrix::operator*(const double& other)
@@ -150,56 +178,91 @@ Matrix& Matrix::operator*=(const double& other)
 
 Matrix Matrix::operator*(const Matrix& other)
 {
-	Matrix temp(this->arr.size(), other.arr[other.arr.size() - 1].size());
-	for (int i = 0; i < temp.arr.size(); i++)
+	if (this->matrixMaltiplicationCheck(other))
 	{
-		for (int k = 0; k < temp.arr[i].size(); k++)
+		Matrix temp(this->arr.size(), other.arr[other.arr.size() - 1].size());
+		for (int i = 0; i < temp.arr.size(); i++)
 		{
-			for (int j = 0; j < other.arr.size(); j++)
+			for (int k = 0; k < temp.arr[i].size(); k++)
 			{
-				temp.arr[i][k] = temp.arr[i][k] + (this->arr[i][j] * other.arr[j][k]);
+				for (int j = 0; j < other.arr.size(); j++)
+				{
+					temp.arr[i][k] = temp.arr[i][k] + (this->arr[i][j] * other.arr[j][k]);
+				}
 			}
 		}
+		return temp;
 	}
-	return temp;
+	else
+	{
+		return *this;
+	}
 }
 
 Matrix Matrix::operator/(const double& other)
 {
-	Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
-	for (int i = 0; i < temp.arr.size(); i++)
+	if (other != 0)
 	{
-		for (int k = 0; k < temp.arr[i].size(); k++)
+		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
+		for (int i = 0; i < temp.arr.size(); i++)
 		{
-			temp.arr[i][k] = this->arr[i][k] / other;
+			for (int k = 0; k < temp.arr[i].size(); k++)
+			{
+				temp.arr[i][k] = this->arr[i][k] / other;
+			}
 		}
+		return temp;
 	}
-	return temp;
+	else
+	{
+		return *this;
+	}
 }
 
 Matrix& Matrix::operator/=(const double& other)
 {
-	return *this = *this / other;
+	if (other != 0)
+	{
+		return *this = *this / other;
+	}
+	else
+	{
+		return *this;
+	}
 }
 
 Matrix Matrix::operator^(const int& other)
 {
-	Matrix temp(*this);
-	for (int i = 1; i < other; i++)
+	if (this->squareMatrixCheck())
 	{
-		temp = temp * *this;
+		Matrix temp(*this);
+		for (int i = 1; i < other; i++)
+		{
+			temp = temp * *this;
+		}
+		return temp;
 	}
-	return temp;
+	else
+	{
+		return *this;
+	}
 }
 
 Matrix& Matrix::operator^=(const int& other)
 {
-	Matrix temp(*this);
-	for (int i = 1; i < other; i++)
+	if (this->squareMatrixCheck())
 	{
-		*this = temp * *this;
+		Matrix temp(*this);
+		for (int i = 1; i < other; i++)
+		{
+			*this = temp * *this;
+		}
+		return *this;
 	}
-	return *this;
+	else
+	{
+		return *this;
+	}
 }
 
 double Matrix::getDeterminantOfMatrix()
