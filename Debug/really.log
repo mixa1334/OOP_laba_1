@@ -22,7 +22,13 @@ C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(186,22): warning C4018: <: н�
 C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(188,23): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(207,21): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(209,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(353,62): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(334,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(351,16): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(353,71): warning C4244: +=: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
 C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(363,20): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(365,21): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(385,20): warning C4018: <: несоответствие типов со знаком и без знака

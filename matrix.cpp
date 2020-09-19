@@ -154,7 +154,7 @@ Matrix& Matrix::operator-=(const Matrix& other)
 	}
 	else
 	{
-		return* this;
+		return*this;
 	}
 }
 
@@ -318,7 +318,7 @@ bool Matrix::matrixMaltiplicationCheck(const Matrix& other)
 
 bool Matrix::squareMatrixCheck()
 {
-	if (this->arr.size() == this->arr[this->arr.size() - 1].size())
+	if (this->arr.size() == this->arr[this->arr.size() - 1].size() && this->arr.size() > 1)
 	{
 		return true;
 	}
@@ -331,26 +331,26 @@ bool Matrix::squareMatrixCheck()
 Matrix Matrix::minor(Matrix matrix, const int& i, const int& j)
 {
 	matrix.arr.erase(matrix.arr.begin() + i);
-	for (auto& matrix_ : matrix.arr)
+	for (int z = 0; z < matrix.arr.size(); z++)
 	{
-		matrix_.erase(matrix_.begin() + j);
+		matrix.arr[z].erase(matrix.arr[z].begin() + j);
 	}
 	return matrix;
 }
 
 double Matrix::determinant(const Matrix& matrix)
 {
-	int  Y = matrix.arr[0].size();
-	if (Y == 1)
+	int  size = matrix.arr[0].size();
+	if (size == 1)
 	{
 		return matrix.arr[0][0];
 	}
 	int  signum = 1;
 	int  summ = 0;
 	int  j = 0;
-	for (auto& matrix_ : matrix.arr[0])
+	for (int i = 0; i < matrix.arr[0].size(); i++)
 	{
-		summ += matrix_ * signum * determinant(minor(matrix, 0, j));
+		summ += matrix.arr[0][i] * signum * determinant(minor(matrix, 0, j));
 		signum *= -1;
 		j++;
 	}
