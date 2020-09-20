@@ -124,7 +124,7 @@ int main()
 		case 12:
 			if (A.matrixMaltiplicationCheck(B))
 			{
-				cout << "Произведение матрицы А и В:/n";
+				cout << "Произведение матрицы А и В:\n";
 				cout << A * B;
 			}
 			else
@@ -179,7 +179,7 @@ int main()
 			}
 			else
 			{
-				cout << "Матрица A имеет не квадратный вид/n";
+				cout << "Матрица A имеет не квадратный вид\n";
 			}
 			break;
 		case 18:
@@ -197,7 +197,7 @@ int main()
 			}
 			else
 			{
-				cout << "Матрица B имеет не квадратный вид/n";
+				cout << "Матрица B имеет не квадратный вид\n";
 			}
 			break;
 		case 19:
