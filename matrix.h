@@ -18,7 +18,9 @@ public:
 
 	Matrix(const vector<vector<double>>& other);
 
-	bool operator==(const Matrix& other);
+	bool operator==(const Matrix& other) const;
+
+	bool operator!=(const Matrix& other) const;
 
 	Matrix& operator=(const Matrix& other);
 
@@ -54,17 +56,17 @@ public:
 
 	double getDeterminantOfMatrix();
 
-	double getNormOneOfMatrix();
+	double getNormOneOfMatrix() const;
 
-	double getNormTwoOfMatrix();
+	double getNormTwoOfMatrix() const;
 
-	double getNormThreeOfMatrix();
+	double getNormThreeOfMatrix() const;
 
-	bool matrix—ompatibilityCheck(const Matrix& other);
+	bool matrix—ompatibilityCheck(const Matrix& other) const;
 
-	bool matrixMaltiplicationCheck(const Matrix& other);
+	bool matrixMaltiplicationCheck(const Matrix& other) const;
 
-	bool squareMatrixCheck();
+	bool squareMatrixCheck() const;
 
 	friend ostream& operator<<(ostream& os, const Matrix& matrix);
 
@@ -77,11 +79,11 @@ private:
 
 	double determinant(const Matrix& matrix);
 
-	double normOne();
+	double normOne() const;
 
-	double normTwo();
+	double normTwo() const;
 
-	double normThree();
+	double normThree() const;
 
 };
 

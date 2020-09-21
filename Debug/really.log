@@ -1,47 +1,46 @@
 ﻿  matrix.cpp
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(11,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(14,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(24,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(27,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(37,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(40,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(51,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(53,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(72,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(75,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(86,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(88,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(106,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(108,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(136,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(138,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(156,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(158,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(186,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(188,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(206,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(208,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(210,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(229,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(231,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(351,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(368,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(370,71): warning C4244: +=: преобразование "_Ty" в "int", возможна потеря данных
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(11,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(14,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(24,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(27,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(37,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(40,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(51,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(53,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(78,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(81,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(92,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(94,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(112,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(114,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(142,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(144,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(162,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(164,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(192,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(194,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(212,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(214,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(216,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(235,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(237,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(357,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(374,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(376,71): warning C4244: +=: преобразование "_Ty" в "int", возможна потеря данных
           with
           [
               _Ty=double
           ]
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(380,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(382,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(402,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(404,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(424,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(426,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(438,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(440,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(456,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(459,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(386,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(388,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(408,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(410,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(430,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(432,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(444,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(446,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(461,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\furno\source\repos\OOP_laba_1\matrix.cpp(464,21): warning C4018: <: несоответствие типов со знаком и без знака
   really.cpp
   Создание кода...
-C:\Users\миша\source\repos\OOP_laba_1\matrix.cpp(67): warning C4715: Matrix::operator==: значение возвращается не при всех путях выполнения
-  really.vcxproj -> C:\Users\миша\source\repos\OOP_laba_1\Debug\really.exe
+  really.vcxproj -> C:\Users\furno\source\repos\OOP_laba_1\Debug\really.exe

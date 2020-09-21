@@ -44,7 +44,7 @@ Matrix::Matrix(const vector<vector<double>>& other)
 	}
 }
 
-bool Matrix::operator==(const Matrix& other)
+bool Matrix::operator==(const Matrix& other) const
 {
 	if (matrixÑompatibilityCheck(other))
 	{
@@ -65,6 +65,11 @@ bool Matrix::operator==(const Matrix& other)
 	{
 		return false;
 	}
+}
+
+bool Matrix::operator!=(const Matrix& other) const
+{
+	return !(*this == other);
 }
 
 Matrix& Matrix::operator=(const Matrix& other) {
@@ -295,22 +300,22 @@ double Matrix::getDeterminantOfMatrix()
 	}
 }
 
-double Matrix::getNormOneOfMatrix()
+double Matrix::getNormOneOfMatrix() const
 {
 	return (this->normOne());
 }
 
-double Matrix::getNormTwoOfMatrix()
+double Matrix::getNormTwoOfMatrix() const
 {
 	return (this->normTwo());
 }
 
-double Matrix::getNormThreeOfMatrix()
+double Matrix::getNormThreeOfMatrix() const 
 {
 	return (this->normThree());
 }
 
-bool Matrix::matrixÑompatibilityCheck(const Matrix& other)
+bool Matrix::matrixÑompatibilityCheck(const Matrix& other) const
 {
 	if (this->arr.size() == other.arr.size() && this->arr[this->arr.size() - 1].size() == other.arr[other.arr.size() - 1].size())
 	{
@@ -322,7 +327,7 @@ bool Matrix::matrixÑompatibilityCheck(const Matrix& other)
 	}
 }
 
-bool Matrix::matrixMaltiplicationCheck(const Matrix& other)
+bool Matrix::matrixMaltiplicationCheck(const Matrix& other) const
 {
 	if (this->arr[this->arr.size() - 1].size() == other.arr.size())
 	{
@@ -334,7 +339,7 @@ bool Matrix::matrixMaltiplicationCheck(const Matrix& other)
 	}
 }
 
-bool Matrix::squareMatrixCheck()
+bool Matrix::squareMatrixCheck() const
 {
 	if (this->arr.size() == this->arr[this->arr.size() - 1].size() && this->arr.size() > 1)
 	{
@@ -375,7 +380,7 @@ double Matrix::determinant(const Matrix& matrix)
 	return summ;
 }
 
-double Matrix::normOne()
+double Matrix::normOne() const 
 {
 	double max = 0, num = 0;
 	for (int i = 0; i < this->arr.size(); i++)
@@ -397,7 +402,7 @@ double Matrix::normOne()
 	return max;
 }
 
-double Matrix::normTwo()
+double Matrix::normTwo() const
 {
 	double max = 0, num = 0;
 	for (int i = 0; i < this->arr[this->arr.size() - 1].size(); i++)
@@ -419,7 +424,7 @@ double Matrix::normTwo()
 	return max;
 }
 
-double Matrix::normThree()
+double Matrix::normThree() const
 {
 	double temp = 0;
 	for (int i = 0; i < this->arr.size(); i++)
@@ -444,7 +449,6 @@ ostream& operator<<(ostream& stream, const Matrix& matrix)
 		}
 		stream << endl;
 	}
-	stream << "\n\n";
 	return stream;
 }
 
