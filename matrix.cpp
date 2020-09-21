@@ -59,6 +59,7 @@ bool Matrix::operator==(const Matrix& other)
 				}
 			}
 		}
+		return true;
 	}
 	else
 	{
