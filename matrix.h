@@ -18,6 +18,8 @@ public:
 
 	Matrix(const vector<vector<double>>& other);
 
+	bool operator==(const Matrix& other);
+
 	Matrix& operator=(const Matrix& other);
 
 	Matrix operator+(const double& other);
@@ -58,7 +60,7 @@ public:
 
 	double getNormThreeOfMatrix();
 
-	bool matrixAdditionCheck(const Matrix& other);
+	bool matrix—ompatibilityCheck(const Matrix& other);
 
 	bool matrixMaltiplicationCheck(const Matrix& other);
 

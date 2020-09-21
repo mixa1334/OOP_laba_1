@@ -44,6 +44,28 @@ Matrix::Matrix(const vector<vector<double>>& other)
 	}
 }
 
+bool Matrix::operator==(const Matrix& other)
+{
+	if (matrix—ompatibilityCheck(other))
+	{
+		for (int i = 0; i < this->arr.size(); i++)
+		{
+			for (int k=0; k < this->arr[i].size(); k++)
+			{
+				if (this->arr[i][k] != other.arr[i][k])
+				{
+					return false;
+					break;
+				}
+			}
+		}
+	}
+	else
+	{
+		return false;
+	}
+}
+
 Matrix& Matrix::operator=(const Matrix& other) {
 	arr.clear();
 	arr.resize(other.arr.size());
@@ -78,7 +100,7 @@ Matrix& Matrix::operator+=(const double& other)
 
 Matrix Matrix::operator+(const Matrix& other)
 {
-	if (this->matrixAdditionCheck(other))
+	if (this->matrix—ompatibilityCheck(other))
 	{
 		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
 		for (int i = 0; i < temp.arr.size(); i++)
@@ -98,7 +120,7 @@ Matrix Matrix::operator+(const Matrix& other)
 
 Matrix& Matrix::operator+=(const Matrix& other)
 {
-	if (this->matrixAdditionCheck(other))
+	if (this->matrix—ompatibilityCheck(other))
 	{
 		return *this = *this + other;
 	}
@@ -128,7 +150,7 @@ Matrix& Matrix::operator-=(const double& other)
 
 Matrix Matrix::operator-(const Matrix& other)
 {
-	if (this->matrixAdditionCheck(other))
+	if (this->matrix—ompatibilityCheck(other))
 	{
 		Matrix temp(this->arr.size(), this->arr[this->arr.size() - 1].size());
 		for (int i = 0; i < temp.arr.size(); i++)
@@ -148,7 +170,7 @@ Matrix Matrix::operator-(const Matrix& other)
 
 Matrix& Matrix::operator-=(const Matrix& other)
 {
-	if (this->matrixAdditionCheck(other))
+	if (this->matrix—ompatibilityCheck(other))
 	{
 		return *this = *this - other;
 	}
@@ -252,12 +274,7 @@ Matrix& Matrix::operator^=(const int& other)
 {
 	if (this->squareMatrixCheck())
 	{
-		Matrix temp(*this);
-		for (int i = 1; i < other; i++)
-		{
-			*this = temp * *this;
-		}
-		return *this;
+		return *this = *this ^ other;
 	}
 	else
 	{
@@ -292,7 +309,7 @@ double Matrix::getNormThreeOfMatrix()
 	return (this->normThree());
 }
 
-bool Matrix::matrixAdditionCheck(const Matrix& other)
+bool Matrix::matrix—ompatibilityCheck(const Matrix& other)
 {
 	if (this->arr.size() == other.arr.size() && this->arr[this->arr.size() - 1].size() == other.arr[other.arr.size() - 1].size())
 	{
